@@ -1,0 +1,228 @@
+[
+  {
+    "id": "soc-analyst",
+    "name": "SOC Analyst",
+    "description": "Monitors and fights threats in a Security Operations Center (SOC). Analyzes security logs, responds to incidents, and maintains SIEM tooling.",
+    "required_skills": [
+      {
+        "name": "Splunk",
+        "category": "SIEM & Log Analysis",
+        "importance": "High"
+      },
+      {
+        "name": "Wireshark",
+        "category": "Network Security",
+        "importance": "High"
+      },
+      {
+        "name": "Log Analysis",
+        "category": "SIEM & Log Analysis",
+        "importance": "High"
+      },
+      {
+        "name": "SIEM Integration",
+        "category": "SIEM & Log Analysis",
+        "importance": "Medium"
+      },
+      {
+        "name": "TCP/IP Networking",
+        "category": "Network Security",
+        "importance": "Medium"
+      }
+    ],
+    "categories": [
+      "SIEM & Log Analysis",
+      "Network Security",
+      "Incident Response"
+    ],
+    "prerequisites": [
+      "CompTIA Security+",
+      "Basic understanding of operating systems (Linux/Windows)",
+      "Foundational networking knowledge"
+    ]
+  },
+  {
+    "id": "penetration-tester",
+    "name": "Penetration Tester",
+    "description": "Simulates cyberattacks to identify vulnerabilities in systems, networks, and applications. Produces remediation reports for stakeholders.",
+    "required_skills": [
+      {
+        "name": "Metasploit",
+        "category": "Penetration Testing",
+        "importance": "High"
+      },
+      {
+        "name": "Burp Suite",
+        "category": "Penetration Testing",
+        "importance": "High"
+      },
+      {
+        "name": "Nmap",
+        "category": "Penetration Testing",
+        "importance": "Medium"
+      },
+      {
+        "name": "OWASP Top 10",
+        "category": "Penetration Testing",
+        "importance": "High"
+      },
+      {
+        "name": "Python Scripting",
+        "category": "Scripting & Automation",
+        "importance": "Medium"
+      }
+    ],
+    "categories": [
+      "Penetration Testing",
+      "Vulnerability Management",
+      "Scripting & Automation"
+    ],
+    "prerequisites": [
+      "OSCP (Offensive Security Certified Professional)",
+      "Strong understanding of web application architectures",
+      "Scripting skills (Python, Bash)"
+    ]
+  },
+  {
+    "id": "security-analyst",
+    "name": "Security Analyst",
+    "description": "Manages internal risk, implements defensive security controls, and performs vulnerability scans to secure corporate environments.",
+    "required_skills": [
+      {
+        "name": "Nessus",
+        "category": "Vulnerability Management",
+        "importance": "High"
+      },
+      {
+        "name": "Firewall Configuration",
+        "category": "Network Security",
+        "importance": "High"
+      },
+      {
+        "name": "Endpoint Protection (EDR)",
+        "category": "Network Security",
+        "importance": "High"
+      },
+      {
+        "name": "IAM Policies",
+        "category": "Identity & Access Management",
+        "importance": "Medium"
+      }
+    ],
+    "categories": [
+      "Vulnerability Management",
+      "Network Security",
+      "Identity & Access Management"
+    ],
+    "prerequisites": [
+      "CompTIA Network+",
+      "1-2 years of general IT experience"
+    ]
+  },
+  {
+    "id": "incident-responder",
+    "name": "Incident Responder",
+    "description": "Investigates, contains, and remediates active cyber threats and security breaches. Recovers systems and performs forensic collections.",
+    "required_skills": [
+      {
+        "name": "FTK Imager",
+        "category": "Digital Forensics",
+        "importance": "Medium"
+      },
+      {
+        "name": "Memory Forensics",
+        "category": "Digital Forensics",
+        "importance": "High"
+      },
+      {
+        "name": "Incident Containment",
+        "category": "Incident Response",
+        "importance": "High"
+      },
+      {
+        "name": "Threat Hunting",
+        "category": "Threat Intelligence",
+        "importance": "Medium"
+      }
+    ],
+    "categories": [
+      "Incident Response",
+      "Digital Forensics",
+      "Threat Intelligence"
+    ],
+    "prerequisites": [
+      "GCIH (GIAC Certified Incident Handler)",
+      "Deep understanding of system internals and logging systems"
+    ]
+  },
+  {
+    "id": "cloud-security-engineer",
+    "name": "Cloud Security Engineer",
+    "description": "Designs, implements, and monitors security controls across public and hybrid cloud environments (AWS, Azure, GCP).",
+    "required_skills": [
+      {
+        "name": "AWS IAM",
+        "category": "Identity & Access Management",
+        "importance": "High"
+      },
+      {
+        "name": "Kubernetes Security",
+        "category": "Cloud Security",
+        "importance": "High"
+      },
+      {
+        "name": "Terraform (IaC)",
+        "category": "Scripting & Automation",
+        "importance": "Medium"
+      },
+      {
+        "name": "CloudTrail Audit",
+        "category": "Cloud Security",
+        "importance": "High"
+      }
+    ],
+    "categories": [
+      "Cloud Security",
+      "Identity & Access Management",
+      "Cryptography"
+    ],
+    "prerequisites": [
+      "AWS Certified Security - Specialty or equivalent Associate cloud certificate",
+      "Experience with containers and infrastructure as code"
+    ]
+  },
+  {
+    "id": "grc-analyst",
+    "name": "GRC Analyst",
+    "description": "Aligns information security programs with business goals, compliance frameworks, regulatory laws, and corporate governance.",
+    "required_skills": [
+      {
+        "name": "ISO 27001",
+        "category": "Compliance & GRC",
+        "importance": "High"
+      },
+      {
+        "name": "NIST CSF",
+        "category": "Compliance & GRC",
+        "importance": "High"
+      },
+      {
+        "name": "Risk Assessments",
+        "category": "Compliance & GRC",
+        "importance": "High"
+      },
+      {
+        "name": "Policy Drafting",
+        "category": "Compliance & GRC",
+        "importance": "Medium"
+      }
+    ],
+    "categories": [
+      "Compliance & GRC"
+    ],
+    "prerequisites": [
+      "Knowledge of global data laws (GDPR, HIPAA)",
+      "Excellent technical writing and communication skills"
+    ]
+  }
+]

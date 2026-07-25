@@ -1,0 +1,158 @@
+/* ─── Google Fonts: Inter & Space Grotesk ───────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Cyber Operating System Color Tokens ────────────────────────────────────────── */
+:root {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-num: 'Space Grotesk', system-ui, sans-serif;
+  
+  --bg-main: #070B14;
+  --bg-secondary: #0E1320;
+  --bg-card: rgba(20, 24, 36, 0.82);
+  --bg-sidebar: #0A0F19;
+  
+  --accent-purple: #7C5CFF;
+  --accent-cyan: #00E5FF;
+  --status-success: #00D084;
+  --status-warning: #F5B301;
+  --status-danger: #FF5C7A;
+  
+  --text-white: #F8FAFC;
+  --text-muted: #94A3B8;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-main);
+  color: var(--text-white);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-white);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Space Grotesk for numbers/KPIs */
+.font-num {
+  font-family: var(--font-num);
+}
+
+/* ─── WebKit Autofill Dark Theme Override ───────────────────────────────────────── */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px #0E1320 !important;
+}
+
+/* ─── Custom Cyber Scrollbar ─────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(124, 92, 255, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(124, 92, 255, 0.8);
+}
+
+/* ─── Glassmorphism Utility Classes ───────────────────────────────────────────── */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+}
+
+.glass-panel-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(124, 92, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(124, 92, 255, 0.15);
+}
+
+.glass-hero {
+  background: linear-gradient(135deg, rgba(124, 92, 255, 0.15) 0%, rgba(155, 93, 229, 0.1) 50%, rgba(0, 229, 255, 0.08) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+}
+
+/* ─── Gradient Button & Text Helpers ─────────────────────────────────────────── */
+.btn-gradient-primary {
+  background: linear-gradient(135deg, #7C5CFF 0%, #9B5DE5 100%);
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-gradient-primary:hover {
+  opacity: 0.95;
+  box-shadow: 0 0 20px rgba(124, 92, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+.btn-glass {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-white);
+  transition: all 0.2s ease;
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.gradient-text-purple {
+  background: linear-gradient(135deg, #7C5CFF 0%, #00E5FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ─── Shimmer Loading Skeleton ────────────────────────────────────────────────── */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(90deg, rgba(255,255,255,0.03) 25%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.03) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.8s infinite;
+}
